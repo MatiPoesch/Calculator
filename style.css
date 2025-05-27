@@ -1,11 +1,19 @@
+body {
+    min-height: 200px;
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+}
 
 .mainCalculator {
     display: flex;
     flex-wrap: wrap;
-    justify-content:center;
-    margin: auto;
-    max-width: 400px;
-    max-height: 400px;
+    justify-content: center;
+    align-items: flex-start;
+    background-color:lightgray;
+    padding: 20px;
+    padding-bottom:30px;
+   
 }
 
 #display {
@@ -19,19 +27,41 @@
     padding: 5px;
     border: 1px solid grey;
     min-height: 20px;
-    min-width: 400px;
-}
-#operatorButtons {
-    flex: 1 25%;
-   
-}
-#clearButton {
-    
+    flex: 1 0 400px;
 }
 .operators {
+   display:flex;
+   flex-wrap: wrap;
+}
+
+#numberButtons {
+    display:flex;
+    flex-wrap:wrap;
+}
+#operatorButtons {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    max-width: 200px;
+}
+.nbutton{
+}
+#numberButtons button {
+    background-color: lightsteelblue;
+    flex: 1 33%;
+    padding:15px;
+    /* padding-top:15px; */
+}
+#operatorButtons button {
+    background-color: lightsteelblue;
+    flex:1 25%;
+    padding:15px;  
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#numberButtons #equal {
+    background-color:  rgb(68, 101, 248);
     
-   
+}
+#numberButtons #clearButton {
+    background-color: rgb(68, 101, 248);
 }

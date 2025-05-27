@@ -105,13 +105,14 @@ document.addEventListener("DOMContentLoaded",() => {
 
     const buttonEqual = document.createElement("button");
     buttonEqual.textContent='=';
+    buttonEqual.setAttribute("id","equal");
     buttonEqual.addEventListener("click",() => {
         manageOperation(ndisplay);
         ndisplay='';
         manageOperation("=");
 
     })
-    operatorButtons.appendChild(buttonEqual);
+    numberButtons.appendChild(buttonEqual);
 
     const buttonClear = document.querySelector("#clearButton");
     buttonClear.addEventListener("click",() => {
