@@ -1,0 +1,37 @@
+
+.mainCalculator {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin: auto;
+    max-width: 400px;
+    max-height: 400px;
+}
+
+#display {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-self: flex-start;
+    flex-wrap: nowrap;
+    background-color: rgb(170, 170, 170);
+    margin: 20px;
+    padding: 5px;
+    border: 1px solid grey;
+    min-height: 20px;
+    min-width: 400px;
+}
+#operatorButtons {
+    flex: 1 25%;
+   
+}
+#clearButton {
+    
+}
+.operators {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 200px;
+    
+   
+}
